@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.rh(1433): warning RC4005: 'IDCANCEL' : redefinition
+  
+TypingGame.rc(107): warning RC2182: duplicate dialog control ID 2
+  
+  TypingGame.vcxproj -> C:\Users\hjis0\OneDrive - 숭실대학교 - Soongsil University\Univ\23-2\윈플\팀플\TypingGame\x64\Debug\TypingGame.exe
