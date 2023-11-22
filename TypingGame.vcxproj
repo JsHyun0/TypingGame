@@ -184,6 +184,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CDlgTab1.h" />
+    <ClInclude Include="CDlgTab2.h" />
+    <ClInclude Include="CDlgTab3.h" />
+    <ClInclude Include="CDlgTab4.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -193,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDlgTab1.cpp" />
+    <ClCompile Include="CDlgTab2.cpp" />
+    <ClCompile Include="CDlgTab3.cpp" />
+    <ClCompile Include="CDlgTab4.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

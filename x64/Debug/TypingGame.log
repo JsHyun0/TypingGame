@@ -2,4 +2,10 @@
   
 TypingGame.rc(107): warning RC2182: duplicate dialog control ID 2
   
+TypingGame.rc(117): warning RC2182: duplicate dialog control ID 2
+  
+TypingGame.rc(128): warning RC2182: duplicate dialog control ID 2
+  
+TypingGame.rc(139): warning RC2182: duplicate dialog control ID 2
+  
   TypingGame.vcxproj -> C:\Users\hjis0\OneDrive - 숭실대학교 - Soongsil University\Univ\23-2\윈플\팀플\TypingGame\x64\Debug\TypingGame.exe

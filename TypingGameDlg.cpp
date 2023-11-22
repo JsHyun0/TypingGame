@@ -107,11 +107,10 @@ BOOL CTypingGameDlg::OnInitDialog()
 	m_tab.GetWindowRect(rect);
 
 	m_tab.InsertItem(0, _T("메인화면"));
-	/*
-	m_tab.InsertItem(1, _T("게임 1");
-	m_tab.InsertItem(2, _T("게임 2");
-	m_tab.InsertItem(3, _T("점수판");
-	*/
+	m_tab.InsertItem(1, _T("게임 1"));
+	m_tab.InsertItem(2, _T("게임 2"));
+	m_tab.InsertItem(3, _T("점수판"));
+	
 
 	m_tab.SetCurSel(0);
 	
@@ -120,22 +119,22 @@ BOOL CTypingGameDlg::OnInitDialog()
 	dlg1->MoveWindow(0, 20, rect.Width(), rect.Height());
 	dlg1->ShowWindow(SW_SHOW);
 
-	/*
-	dlg2 = new CDlgTab1;
-	dlg2->Create(IDD_DIALOG_TAB_2_GAME, &m_tab);
+	
+	dlg2 = new CDlgTab2;
+	dlg2->Create(IDD_DIALOG_TAB_2_PRACTICE, &m_tab);
 	dlg2->MoveWindow(0, 20, rect.Width(), rect.Height());
 	dlg2->ShowWindow(SW_HIDE);
 
-	dlg3 = new CDlgTab1;
+	dlg3 = new CDlgTab3;
 	dlg3->Create(IDD_DIALOG_TAB_3_GAME, &m_tab);
 	dlg3->MoveWindow(0, 20, rect.Width(), rect.Height());
 	dlg3->ShowWindow(SW_HIDE);
 
-	dlg4 = new CDlgTab1;
+	dlg4 = new CDlgTab4;
 	dlg4->Create(IDD_DIALOG_TAB_4_SCORE, &m_tab);
 	dlg4->MoveWindow(0, 20, rect.Width(), rect.Height());
 	dlg4->ShowWindow(SW_HIDE);
-	*/
+	
 	
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
@@ -199,6 +198,27 @@ void CTypingGameDlg::OnSelchangeTab(NMHDR* pNMHDR, LRESULT* pResult)
 		switch (sel) {
 		case 0:
 			dlg1->ShowWindow(SW_SHOW);
+			dlg2->ShowWindow(SW_HIDE);
+			dlg3->ShowWindow(SW_HIDE);
+			dlg4->ShowWindow(SW_HIDE);
+			break;
+		case 1:
+			dlg1->ShowWindow(SW_HIDE);
+			dlg2->ShowWindow(SW_SHOW);
+			dlg3->ShowWindow(SW_HIDE);
+			dlg4->ShowWindow(SW_HIDE);
+			break;
+		case 2:
+			dlg1->ShowWindow(SW_HIDE);
+			dlg2->ShowWindow(SW_HIDE);
+			dlg3->ShowWindow(SW_SHOW);
+			dlg4->ShowWindow(SW_HIDE);
+			break;
+		case 3:
+			dlg1->ShowWindow(SW_HIDE);
+			dlg2->ShowWindow(SW_HIDE);
+			dlg3->ShowWindow(SW_HIDE);
+			dlg4->ShowWindow(SW_SHOW);
 			break;
 
 		}

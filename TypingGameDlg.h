@@ -2,6 +2,9 @@
 // TypingGameDlg.h: 헤더 파일
 //
 #include "CDlgTab1.h"
+#include "CDlgTab2.h"
+#include "CDlgTab3.h"
+#include "CDlgTab4.h"
 #pragma once
 
 
@@ -35,4 +38,7 @@ public:
 	CTabCtrl m_tab;
 	afx_msg void OnSelchangeTab(NMHDR* pNMHDR, LRESULT* pResult);
 	CDlgTab1* dlg1;
+	CDlgTab2* dlg2;
+	CDlgTab3* dlg3;
+	CDlgTab4* dlg4;
 };

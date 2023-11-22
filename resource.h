@@ -10,7 +10,10 @@
 #define IDD_TYPINGGAME_DIALOG           102
 #define IDR_MAINFRAME                   128
 #define IDD_DIALOG_TAB_1_MAIN           132
-#define IDC_TAB1                        1000
+#define IDD_DIALOG_TAB_2_PRACTICE       133
+#define IDD_DIALOG_TAB_3_GAME           134
+#define IDD_DIALOG_TAB_1_MAIN3          135
+#define IDD_DIALOG_TAB_4_SCORE          135
 #define IDC_TAB                         1000
 #define IDCANCEL                        1001
 
