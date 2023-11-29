@@ -21,4 +21,17 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
 
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnClickedButtonReset();
+	afx_msg void OnClickedButtonUpdate();
+	afx_msg void OnPaint();
+	virtual BOOL OnInitDialog();
+	CStringArray lines_prac;
+	CStringArray lines_rain;
+
+	CString filePath_prac = _T("C:\\Temp\\pracScore.txt");
+	CString filePath_rain = _T("C:\\Temp\\rainScore.txt");
+	BOOL m_bType;
+	afx_msg void OnRadioGame1();
+	afx_msg void OnRadioGame2();
 };
